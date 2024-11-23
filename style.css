@@ -1,0 +1,137 @@
+/* General Styles */
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background-image: url('images/background.jpg'); /* Add your background image here */
+    background-size: cover;
+    color: #333;
+}
+
+header {
+    background: linear-gradient(90deg, #ff7f50, #ff4500); /* Fun gradient background */
+    color: white; /* Text color */
+    text-align: center; /* Center the header text */
+    padding: 20px 0;
+    font-size: 2.5em; /* Make the text larger */
+    font-family: 'Luckiest Guy', cursive; /* Add a playful font */
+    text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.5); /* Add a glowing shadow effect */
+    border-bottom: 5px solid #ff4500; /* Add a decorative border */
+}
+
+/* Optional Header Animation */
+header h1 {
+    animation: bounce 1s infinite alternate; /* Add a bounce animation */
+}
+
+@keyframes bounce {
+    0% { transform: translateY(0); }
+    100% { transform: translateY(-10px); }
+}
+
+
+/* Turkey Clock */
+.turkey-clock {
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+}
+
+
+.turkey-clock img {
+    margin-top: 5em; /* Move the image down by 5 spaces (using em for scalability) */
+    margin-bottom: 3em;
+    display: block; /* Ensure it's treated as a block element */
+    margin-left: auto; /* Center horizontally */
+    margin-right: auto;
+}
+
+
+#countdown {
+    position: absolute;
+    top: 87%; /* Center vertically */
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 5em; /* Large text size for emphasis */
+    font-family: 'Fredoka One', sans-serif; /* Bubble-like font */
+    color: red; /* Fill color */
+    -webkit-text-stroke: 3px black; /* Black outline around the letters */
+    text-shadow: 
+        2px 2px 0 rgba(0, 0, 0, 0.5), /* Soft shadow for depth */
+       -2px -2px 0 rgba(0, 0, 0, 0.5); /* Additional shadow to enhance outline */
+    background-color: transparent; /* Transparent background */
+    text-align: center; /* Center-align text */
+    display: inline-block; /* Keep inline block formatting */
+    padding: 10px; /* Add some padding around the text */
+}
+
+/* Message Board */
+.message-board {
+    text-align: center;
+    margin: 30px;
+}
+
+.message-board h2 {
+    font-size: 2em; /* Adjust the size as needed */
+    color: white; /* Change font color to white */
+    text-align: center; /* Center-align the heading */
+    margin-bottom: 20px; /* Add space below the heading */
+}
+
+#message-form {
+    margin-bottom: 20px;
+}
+
+#message-input {
+    width: 80%;
+    height: 50px;
+    padding: 10px;
+    font-size: 1em;
+}
+
+#message-list {
+    list-style: none;
+    padding: 0;
+    max-width: 80%;
+    margin: 0 auto;
+}
+
+#message-list li {
+    background: #ffefd5;
+    padding: 10px;
+    margin: 5px 0;
+    border-radius: 5px;
+}
+
+/* Footer */
+footer {
+    background: linear-gradient(90deg, #ff7f50, #ff4500); /* Same gradient as the header */
+    color: white; /* White text color */
+    text-align: center; /* Center-align the text */
+    padding: 20px 0; /* Add some padding */
+    font-size: 2.5em; /* Match the header's font size */
+    font-family: 'Luckiest Guy', cursive; /* Use the same fun font as the header */
+    text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.5); /* Glowing shadow effect */
+    border-top: 5px solid #ff4500; /* Add a top border for visual balance */
+}
+
+/* Optional Footer Animation */
+footer p {
+    animation: bounce 1s infinite alternate; /* Add the bounce animation */
+}
+
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    body {
+        color: #444;
+        background-color: #f4e8c1;
+    }
+
+    header {
+        background-color: #d35400;
+    }
+
+    footer {
+        background-color: #d35400;
+    }
+}
